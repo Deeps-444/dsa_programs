@@ -1,0 +1,7 @@
+TransactionID,CustomerID,CustomerName,Balance,TransactionAmt,Timestamp
+1,101,Alice,5000,200,2025-08-01 10:23:45
+2,102,Bob,3000,150,2025-07-31 18:45:10
+3,103,Charlie,4500,500,2025-08-01 08:30:00
+4,104,Diana,6000,250,2025-07-30 14:05:50
+5,105,Edward,7000,100,2025-08-02 09:10:30
+
