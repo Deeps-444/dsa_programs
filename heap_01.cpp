@@ -73,11 +73,25 @@ void buildMinheap(int arr[], int n)
     }
 }
 
+// sorting
+void heapSort(int arr[], int n)
+{
+    // build heap
+    buildMaxheap(arr, n);
+
+    // sort
+    for (int i = n - 1; i > 0; i--)
+    {
+        swap(&arr[0], &arr[i]);
+        maxHeapify(arr, i, 0);
+    }
+}
+
 // driving function]
 int main()
 {
     // take input from user:
-    int n, arr[10], dup[10];
+    int n, arr[10], dup[10], arr2[10];
     cout << "Enter number of elements: ";
     cin >> n;
 
@@ -86,6 +100,7 @@ int main()
     {
         cin >> arr[i];
         dup[i] = arr[i];
+        arr2[i] = arr[i];
     }
 
     cout << "MAX heap ====" << endl;
@@ -101,4 +116,13 @@ int main()
     {
         cout << dup[i] << " ";
     }
+
+    // sorting===>
+    cout << "\nSorting===" << endl;
+    heapSort(arr2, n);
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr2[i] << " ";
+    }
+    return 0;
 }
