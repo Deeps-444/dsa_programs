@@ -20,7 +20,7 @@ bool cmp(item a, item b)
 // knpasack
 double knapsack(vector<item> items, int maxW)
 {
-    // first sortthe items: descending
+    // first sort the items: descending
     sort(items.begin(), items.end(), cmp);
 
     double totalcost = 0.0;
