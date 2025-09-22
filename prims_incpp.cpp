@@ -64,7 +64,7 @@ void prims(vector<vector<int>> &graph)
         }
     }
 
-    // printing the MST:
+    // printing the MST: 
     cout << "Edge : Weight\n";
     for (int v = 1; v < V; v++)
     {
