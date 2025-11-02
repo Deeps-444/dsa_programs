@@ -20,13 +20,13 @@ int main()
         for (int j = 0; j < n; j++)
             magic[i][j] = 0;
 
-    int i = 1;
+    int i = 1; // 1, 2,.. n^2
     int r = 0;
     int c = n / 2;
 
     while (i <= n * n)
     {
-        magic[r][c] = i++;
+        magic[r][c] = i++; // post-increment
 
         int nextRow = (r - 1 + n) % n;
         int nextCol = (c + 1) % n;
