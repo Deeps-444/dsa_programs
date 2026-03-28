@@ -8,7 +8,7 @@ struct Edge
     int u, v, w;
     bool operator<(Edge const &other)
     {
-        return w < other.w;
+        return w < other.w; 
     }
 };
 
