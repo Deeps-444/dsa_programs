@@ -1,56 +1,98 @@
 {
-    "configurations": [
+  "configurations": [
     {
-        "name": "(gdb) Bash on Windows Attach",
-        "type": "cppdbg",
-        "request": "attach",
-        "program": "enter program name, for example ${workspaceFolder}/a.exe",
-        "processId": "${command:pickRemoteProcess}",
-        "pipeTransport": {
-            "debuggerPath": "/usr/bin/gdb",
-            "pipeProgram": "${env:windir}\\system32\\bash.exe",
-            "pipeArgs": ["-c"],
-            "pipeCwd": ""
-        },
-        "setupCommands": [
-            {
-                "description": "Enable pretty-printing for gdb",
-                "text": "-enable-pretty-printing",
-                "ignoreFailures": true
-            },
-            {
-                "description": "Set Disassembly Flavor to Intel",
-                "text": "-gdb-set disassembly-flavor intel",
-                "ignoreFailures": true
-            }
-        ]
+      "type": "java",
+      "name": "Rec_08",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_08",
+      "projectName": "DSA imp programs_91f16a9f"
     },
+    {
+      "type": "java",
+      "name": "Rec_07",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_07",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "type": "java",
+      "name": "Rec_05",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_05",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "type": "java",
+      "name": "Rec_04",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_04",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "type": "java",
+      "name": "Rec_03",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_03",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "type": "java",
+      "name": "Rec_02",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_02",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "name": "(gdb) Bash on Windows Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "processId": "${command:pickRemoteProcess}",
+      "pipeTransport": {
+        "debuggerPath": "/usr/bin/gdb",
+        "pipeProgram": "${env:windir}\\system32\\bash.exe",
+        "pipeArgs": ["-c"],
+        "pipeCwd": ""
+      },
+      "setupCommands": [
         {
-            "name": "C/C++: gcc.exe build and debug active file",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "C:\\MinGW\\bin",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc.exe build active file"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
         }
-    ],
-    "version": "2.0.0"
+      ]
+    },
+    {
+      "name": "C/C++: gcc.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "C:\\MinGW\\bin",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: gcc.exe build active file"
+    }
+  ],
+  "version": "2.0.0"
 }
