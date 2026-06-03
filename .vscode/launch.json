@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Rec_09",
+      "request": "launch",
+      "mainClass": "java_dsa.Rec_09",
+      "projectName": "DSA imp programs_91f16a9f"
+    },
+    {
+      "type": "java",
       "name": "Rec_08",
       "request": "launch",
       "mainClass": "java_dsa.Rec_08",
