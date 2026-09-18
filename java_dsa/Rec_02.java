@@ -9,7 +9,7 @@ public class Rec_02 {
         // recursion
         // int sum =0;
         // sum += n;
-        System.out.println("n=" + n + " Sum =" + sum);
+        System.out.println("n=" + n + " Sum =" + sum); 
         rec(n-1, sum + n);
         System.out.println("n=" + n);
     }

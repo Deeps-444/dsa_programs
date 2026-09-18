@@ -1,19 +1,39 @@
-package CodeforcesContest;
+import java.io.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        // graph:
+
+    public static void main(String[] args) throws Exception {
+
         Scanner scan = new Scanner(System.in);
-        int m , n, no_of_types;
-        m = scan.nextInt();
-        n = scan.nextInt();
-        
-        
 
-        
+        int t = scan.nextInt();
 
-        return;
+        for(int i = 0; i < t; i++){
+
+            int n = scan.nextInt();
+
+            int[] a = new int[n];
+
+            for(int j = 0; j < n; j++){
+                a[j] = scan.nextInt();
+            }
+
+            
+            int ones = 0;
+            for(int j = 0; j < n; j++){
+                if(a[j] == 1){
+                    ones++;
+                }
+            }
+
+            if (ones > ((n-1)/2)){
+                System.out.println("Bessie");
+            }else{
+                System.out.println("Elsie");
+            }
+        }
+
+        scan.close();
     }
-    
 }

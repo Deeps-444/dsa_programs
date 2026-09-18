@@ -1,12 +1,12 @@
 package binarySearch;
 
 public class MinMax {
-    public static boolean f(int mid, int n , int[] arr){
-        for(int i=0; i< n-1; i++){
-            int difference = arr[i+1] - arr[i];
-        }
+    // public static boolean f(int mid, int n , int[] arr){
+    //     for(int i=0; i< n-1; i++){
+    //         int difference = arr[i+1] - arr[i];
+    //     }
         
-    }
+    // }
     
      public static void findShifting(int[] nums){
         //bianry search
@@ -23,13 +23,13 @@ public class MinMax {
             /*
             for a given array tell yes or no */
 
-            if(f(mid, nums[0], nums)){
-                low = mid + 1;
-                ans = mid;
-            }else{
-                high = mid -1;
+            // if(f(mid, nums[0], nums)){
+            //     low = mid + 1;
+            //     ans = mid;
+            // }else{
+            //     high = mid -1;
 
-            }
+            // }
         }
     }
 

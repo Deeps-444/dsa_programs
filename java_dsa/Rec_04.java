@@ -8,12 +8,12 @@ public class Rec_04 {
         }
         if(n==1) return 1;
 
-        int ans = x * rec(x, n-1);
+        int ans = x * rec(x, n-1); // just kill me already 
         System.out.println("ans = " + ans);
         return ans;
     }
     public static void main(String[] args) {
         rec(2, 8);
-        return ;
+        return ; 
     }
 }
